@@ -1,0 +1,105 @@
+
+
+#road{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+}
+
+#car{
+    height: 50px;
+    position: absolute;
+    bottom: -270px;
+    left: 180px;
+}
+
+
+@keyframes flight{
+
+    0%{
+        bottom: -270px;
+        left: 180px;
+        rotate: 0deg;
+    }
+
+    10%{
+        bottom: -270px;
+        left: 750px;
+        rotate: 0deg;
+    }
+
+
+    20%{
+        bottom: -210px;
+        left: 800px;
+        rotate: -90deg;
+        
+    }
+
+    30%{
+        bottom: 430px;
+        left: 800px;
+        rotate: -90deg;
+        
+    }
+
+
+    40%{
+        bottom: 460px;
+        left: 750px;
+        rotate: -180deg;
+    }
+
+    50%{
+        bottom: 460px;
+        left: 120px;
+        rotate: -180deg;
+        
+    }
+
+
+    60%{
+        bottom: 450px;
+        left: 90px;
+        rotate: -220deg;
+        
+    }
+
+    70%{
+        bottom: 410px;
+        left: 70px;
+        rotate: -270deg; 
+    }
+
+    80%{
+        bottom: -240px;
+        left: 70px;
+        rotate: -270deg;
+       
+    }
+
+    90%{
+        bottom: -260px;
+        left: 100px;
+        rotate: -320deg;
+    }
+
+
+    100%{
+        bottom: -270px;
+        left: 180px;
+        rotate: -360deg;  
+    }
+}
+
+#car{
+    animation-name: flight;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+
